@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-weight: bold;
+    font-size: 30px;
+}
+h2{
+    font-size: 30px;
+}
+.container{
+    width: 100vw;
+    height: 900px;
+    margin: auto;
+    background-image: url("../img/1f3b2.png");
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.user-box, .cpu-box{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid lightcoral 10px;
+    width: 30%;
+    height: 300px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+button{
+   font-size: 22px;
+   width: 10%;
+   height: 60px;
+   border-radius: 20px; 
+   border: solid black 4px;
+   cursor: pointer;
+   align-self: center;
+   background-color: lightcoral;
+   color: black;
+   font-weight: bold;
+}
+.lost, .won, .draw{
+    display: none;
+    text-align: center;
+
+}
+.active{
+    display: block;
+}
+.result{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid lightcoral 3px;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    align-self: center;
+}

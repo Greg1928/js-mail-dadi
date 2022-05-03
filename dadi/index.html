@@ -4,10 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Dadi</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <div class="container">
+            <div class="row">
+                <div class="user-box">
+                    <h2>User</h2>
+                    <h3>Drawn Number:</h3>
+                    <p id="user"></p>
+                </div>
+                <button id="btn">Roll</button>
+                <div class="cpu-box">
+                    <h2>Cpu</h2>
+                    <h3>Drawn Number:</h3>
+                    <p id="cpu"></p>
+                </div>
+            </div>
+            <div class="result">
+                <p id="lost" class="lost">Cpu Won...Try Again!</p>
+                <p id="won" class="won">You Won, Congratulation!</p>
+                <p id="draw" class="draw">Same Score, click 'Roll' to roll the dice again</p>
+            </div>
+
+        </div>
+    
 
 
         <script src="js/main.js"></script>
