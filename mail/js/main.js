@@ -3,8 +3,23 @@ const validEmail = ["emailexample1@gmail.com", "emailexample2@gmail.com", "email
 const userEmail = prompt("Enter Email");
 console.log(userEmail);
 
-if (validEmail.indexOf(userEmail) >= 0){
+/* indexOf Method */
+/* if (validEmail.indexOf(userEmail) >= 0){
     console.log("Valid Email");
 } else {
         console.log("!Warning, Invalid Email!");
     }
+ */
+
+/* Using for */
+let check;
+for ( let i=0; i<validEmail.length; i++ ){
+    if ( userEmail === validEmail[i] ){
+       check = true;
+      } 
+}
+if (check === true){
+    console.log("Valid Email")
+}else {
+    console.log("!Warning, Invalid Email!");
+}
